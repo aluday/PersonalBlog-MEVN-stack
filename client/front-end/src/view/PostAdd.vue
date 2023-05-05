@@ -55,7 +55,7 @@ export default {
                         this.post.description = "";
                         this.post.content = "",
                         this.post.auth = "";
-                        this.$router.push("/admin/")
+                        this.$router.push("/admin/stored")
                     }
                     else if (res.status === 500){
                         window.alert("Thêm bài viết thất bại.");

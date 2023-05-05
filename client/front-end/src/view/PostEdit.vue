@@ -58,6 +58,7 @@ export default {
                 .then(res => {
                     if(res.status === 201){
                         window.alert("Cập nhật bài viết thành công.");
+                        this.$router.push('/admin/stored')
                     }
                     else if(res.status === 500){
                         window.alert("Cập nhật thông tin sách thất bại.")
